@@ -1,0 +1,635 @@
+body {
+  margin: 0px;
+}
+
+#bg_space {
+  height: 55px;
+}
+
+.article_space_1 {
+  height: 55px;
+}
+
+.extra_space {
+  height: 39px;
+}
+
+.article_space {
+  height: 28px;
+}
+
+#main {
+  background-image: url(../../../../assests/body-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+#nav_bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 37%;
+}
+
+#nav_list {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.nav_element {
+  margin-top: 32px;
+  font-family: sans-serif;
+  transition: 1s;
+  font-size: 13px;
+}
+
+.nav_element:hover {
+  color: #00acac;
+  color: #00acac;
+  transform: scale(1.1);
+}
+
+#nav_title {
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 1s;
+}
+#nav_title:hover {
+  color: #00acac;
+  color: #00acac;
+  transform: scale(1.3);
+}
+
+#open-drawer {
+  display: none;
+}
+
+#drawer {
+  display: none;
+}
+
+#article_1 {
+  background-color: aliceblue;
+}
+
+#bg_space {
+  height: 55px;
+}
+
+#bg_image {
+  background-image: url("../../../../assests/snow-mountain-nature-landscape-ai-generated-wallpaper-sr05112411.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 641px;
+}
+
+#bg_image_data {
+  display: grid;
+  padding-top: 208px;
+}
+
+#bg-title-1 {
+  font-family: system-ui;
+  font-size: 55px;
+  font-weight: 700;
+  color: rgb(88, 80, 80);
+  margin: 0px;
+}
+
+#bg-title-2 {
+  font-size: 54px;
+  font-family: system-ui;
+  font-weight: lighter;
+  color: rgb(123, 117, 117);
+  margin: 0px 0px 33px;
+}
+
+#bg-button {
+  color: white;
+  background-color: rgb(81, 80, 80);
+  height: 46px;
+  width: 163px;
+  font-size: 21px;
+  margin-left: 17px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 5px;
+  transition: 1s;
+}
+#bg-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#logo_article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.logo_section {
+  width: 19%;
+}
+#logo {
+  height: 99px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 50%;
+}
+
+.ending_space {
+  height: 27px;
+}
+
+.logo_heading {
+  font-family: sans-serif;
+  color: #4f4c4c;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo_paragraph {
+  font-family: system-ui;
+  color: gray;
+}
+
+#article_space {
+}
+#article_image {
+  height: 503px;
+  width: 58%;
+}
+
+#article_title {
+  font-family: monospace;
+  font-size: 28px;
+  color: #4b4545;
+  margin-top: 64px;
+}
+
+#article_paragraph {
+  width: 60%;
+  font-family: system-ui;
+  color: gray;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-left: 2px;
+}
+
+#cards_head {
+  background-image: url("../../../../assests/wallpaperflare.com_wallpaper (8).jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 429px;
+  height: 254px;
+  display: flex;
+  transition: 1s;
+}
+
+#cards_head:hover {
+  transform: scale(1.05);
+}
+
+#cards_head_1 {
+  background-image: url("../../../../assests/wallpaperflare.com_wallpaper (7).jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 429px;
+  height: 254px;
+  display: flex;
+  transition: 1s;
+}
+
+#cards_head_1:hover {
+  transform: scale(1.05);
+}
+
+.card_body {
+  width: 50%;
+  background-color: #ffffffd4;
+  text-align: center;
+}
+
+.cards_title {
+  font-size: 23px;
+  font-family: sans-serif;
+  color: #4f4c4c;
+}
+
+.cards_paragraph {
+  color: gray;
+  font-family: system-ui;
+  font-size: 14px;
+  font-style: italic;
+}
+#cards_section {
+  padding-left: 16px;
+  width: 190px;
+}
+
+#cards_button {
+  height: 33px;
+  color: rgb(0, 172, 172);
+  width: 117px;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 172, 172);
+  border-image: initial;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+#cards_button:hover {
+  background-color: aqua;
+  color: black;
+  border: none;
+}
+
+#ending {
+  display: grid;
+  justify-content: center;
+}
+
+#ending-title {
+  font-family: sans-serif;
+  color: #4f4c4c;
+}
+
+#ending-paragraph {
+  width: 61%;
+  font-family: system-ui;
+  color: gray;
+  margin-left: 20%;
+}
+
+#ending-button {
+  width: 167px;
+  height: 53px;
+  background-color: transparent;
+  color: aqua;
+  margin-top: 36px;
+  font-size: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: aqua;
+  border-image: initial;
+  border-radius: 6px;
+  transition: 1s;
+}
+
+#ending-button:hover {
+  background-color: aqua;
+  color: black;
+  border: none;
+}
+
+.ending_space {
+  height: 42px;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+  padding-top: 55px;
+  padding-bottom: 49px;
+  padding-left: 5%;
+  gap: 10%;
+}
+
+#Footer_Links {
+  color: aqua;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.footer_element {
+  font-family: system-ui;
+  padding-right: 37px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+#footer_table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: gray;
+  gap: 0px;
+}
+
+@media screen and (max-width: 745px) and (min-width: 0px) {
+  .article_space {
+    height: 3px;
+  }
+
+  .article_space_1 {
+    height: 10px;
+  }
+
+  #nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 33%;
+  }
+
+  .extra_space {
+    height: 0px;
+  }
+
+  #nav_list {
+    display: none;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #open-drawer {
+    display: block;
+  }
+
+  #open-drawer {
+    border-radius: 50%;
+    height: 53px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    padding-top: 24px;
+  }
+
+  .nav_element {
+    margin-top: 32px;
+    font-family: sans-serif;
+    transition: 1s;
+    font-size: 13px;
+  }
+
+  .nav_element:hover {
+    color: #00acac;
+    color: #00acac;
+    transform: scale(1.1);
+  }
+
+  #drawer {
+    display: block;
+    background-color: white;
+  }
+  .drawer {
+    position: fixed;
+    top: 0;
+    left: -291px;
+    width: 224px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    text-align: right;
+  }
+
+  .drawer.open {
+    transform: translateX(250px); /* Show drawer */
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .drawer ul li {
+    margin: 10px 0;
+    font-family: sans-serif;
+  transition: 1s;
+  font-size: 13px;
+  }
+
+  .drawer ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .drawer ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #bg_space {
+    height: 29px;
+  }
+
+  #bg-title-1 {
+    font-family: system-ui;
+    font-size: 32px;
+    font-weight: 700;
+    color: #585050;
+    margin: 0px;
+  }
+
+  #bg-title-2 {
+    font-size: 32px;
+    font-family: system-ui;
+    font-weight: lighter;
+    color: #7b7575;
+    margin: 0px;
+    margin-bottom: 47px;
+  }
+
+  #bg-button {
+    color: white;
+    background-color: #515050;
+    border: none;
+    height: 51px;
+    width: 112px;
+    border-radius: 5px;
+    transition: 1s;
+    font-size: 14px;
+  }
+
+  #bg_image {
+    background-image: url(../../../../assests/snow-mountain-nature-landscape-ai-generated-wallpaper-sr05112411.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 647px;
+  }
+
+  #logo_article {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_paragraph {
+    font-family: system-ui;
+    color: gray;
+    letter-spacing: 2px;
+  }
+
+  #article_image {
+    height: 227px;
+    width: 85%;
+  }
+
+  #article_title {
+    font-family: monospace;
+    font-size: 28px;
+    color: #4b4545;
+    margin-top: 27px;
+  }
+
+  #article_paragraph {
+    width: 88%;
+    font-family: system-ui;
+    color: gray;
+    letter-spacing: 2px;
+  }
+
+  .logo_section {
+    width: 100%;
+  }
+
+  .logo_paragraph {
+    font-family: system-ui;
+    color: gray;
+    width: 86%;
+  }
+
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-left: 15px;
+  }
+  #cards_head {
+    background-image: url("../../../../assests/wallpaperflare.com_wallpaper (8).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 399px;
+    height: 232px;
+    display: flex;
+    transition: 1s;
+    margin-right: 17px;
+  }
+
+  #cards_head_1 {
+    background-image: url("../../../../assests/wallpaperflare.com_wallpaper (7).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 399px;
+    height: 232px;
+    display: flex;
+    transition: 1s;
+    margin-right: 17px;
+  }
+
+      #cards_button {
+        background: transparent;
+        border: 2px solid #00acac;
+        height: 41px;
+        border-radius: 5px;
+        color: #00acac;
+        transition: 1s;
+        width: 119px;
+    }
+
+  #ending-paragraph {
+    width: 89%;
+    font-family: system-ui;
+    color: gray;
+    margin-left: 3%;
+    letter-spacing: 2px;
+  }
+
+  #ending-button {
+    width: 127px;
+    height: 49px;
+    border: 2px solid aqua;
+    background-color: transparent;
+    border-radius: 6px;
+    color: aqua;
+    transition: 1s;
+    margin-top: -6px;
+    font-size: 15px;
+  }
+
+  .ending_space {
+    height: 16px;
+  }
+
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    background-color: #f3f3f3;
+    padding-top: 55px;
+    padding-bottom: 49px;
+  }
+
+  #footer_table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: gray;
+  }
+}
+
+@media screen and (min-width: 504) {
+  #footer_table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: gray;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
