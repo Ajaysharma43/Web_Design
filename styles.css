@@ -12,6 +12,7 @@ body {
   cursor: pointer;
   color: #f9af00;
   transition: color 0.3s ease;
+  margin-left: -37%;
 }
 
 #DarkMode:hover {
@@ -191,7 +192,7 @@ body {
   transition: 1s;
 }
 
-.logo_heading:hover{
+.logo_heading:hover {
   color: black;
 }
 
@@ -199,7 +200,6 @@ body {
   font-family: system-ui;
   color: gray;
 }
-
 
 #article_image {
   height: 503px;
@@ -215,7 +215,7 @@ body {
   width: fit-content;
 }
 
-#article_title:hover{
+#article_title:hover {
   color: black;
 }
 
@@ -326,7 +326,6 @@ body {
   color: black;
 }
 
-
 #ending-paragraph {
   width: 61%;
   font-family: system-ui;
@@ -360,8 +359,7 @@ body {
 }
 
 #footer {
-  display: flex
-;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(243, 243, 243);
@@ -397,8 +395,7 @@ body {
 @media screen and (max-width: 745px) and (min-width: 0px) {
   .article_space {
     height: 23px;
-}
-
+  }
 
   .article_space_1 {
     height: 29px;
@@ -408,7 +405,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 33%;
+    gap: 32%;
   }
 
   .extra_space {
@@ -454,7 +451,8 @@ body {
     color: black;
     transition: 0.5s;
     font-family: system-ui;
-  }
+    width: fit-content;
+}
 
   .drawer-element:hover {
     color: #00acac;
@@ -538,7 +536,7 @@ body {
 
   #bg_space {
     height: 38px;
-}
+  }
 
   #bg-title-1 {
     text-shadow: 1px 1px 52px white;
@@ -612,7 +610,7 @@ body {
     /* margin: 0; */
     margin-bottom: 27px;
     width: fit-content;
-}
+  }
 
   #article_paragraph {
     width: 88%;
@@ -652,7 +650,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 405px;
-        height: 228px;
+    height: 228px;
     display: flex;
     transition: 1s;
     margin-right: 17px;
@@ -663,7 +661,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 405px;
-        height: 228px;
+    height: 228px;
     display: flex;
     transition: 1s;
     margin-right: 17px;
@@ -705,8 +703,7 @@ body {
   }
 
   #footer {
-    display: flex
-;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
@@ -714,7 +711,7 @@ body {
     padding-top: 51px;
     padding-bottom: 61px;
     margin-left: -6%;
-}
+  }
 
   #Footer_Links {
     color: aqua;

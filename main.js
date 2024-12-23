@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.onload = function loaddata(){
   const nav = document.getElementById('body');
-  console.log(nav);
   nav.style.opacity = 1;
   // nav.style.transform = "scale(1)"
 }
@@ -65,7 +64,6 @@ const dark = () => {
   const footer_elements = document.getElementsByClassName('footer_element');
   const footer_titles = document.getElementsByClassName('footer_title');
 
-  console.log(article_title);
   
   if(body.style.backgroundColor == "white")
   {
@@ -83,6 +81,23 @@ const dark = () => {
     {
       drawer_element.style.color = "white"
     }
+
+
+
+    for(let drawer_element of drawer_elements)
+      {
+        drawer_element.addEventListener("mouseover",()=>{
+          drawer_element.style.color = "aqua"
+        })
+      }
+      for(let drawer_element of drawer_elements)
+        {
+          drawer_element.addEventListener("mouseout",()=>{
+            drawer_element.style.color = "white"
+          })
+        }
+
+
 
     logo_article.style.backgroundColor = 'rgb(32 29 29)'
 
@@ -156,6 +171,13 @@ bg_space.style.backgroundColor = 'rgb(32 29 29)'
         drawer_element.style.color = "black"
       }
 
+      for(let drawer_element of drawer_elements)
+        {
+          drawer_element.addEventListener("mouseout",()=>{
+            drawer_element.style.color = "black"
+          })
+        }
+
     for(let bg_space of bg_spaces )
       {
 bg_space.style.backgroundColor = 'transparent'
@@ -181,15 +203,22 @@ bg_space.style.backgroundColor = 'transparent'
             cards_paragraph.style.color = "gray"
           }
       
-    for(let logo of logos){
-      logo.style.color = 'black'
-    }
+          for(let logo of logos){
+            logo.style.color = 'black'
+          }
 
     for(let logo of logos){
       logo.addEventListener("mouseout",()=>{
         logo.style.backgroundColor = "transparent"
       })
     }
+
+    for(let logo of logos){
+      logo.addEventListener("mouseover",()=>{
+        logo.style.backgroundColor = "aqua"
+      })
+    }
+
     article_frame.style.backgroundColor = '#dee3e754'
     article_title.style.color = '#4b4545'
     article_paragraph.style.color = 'gray'
