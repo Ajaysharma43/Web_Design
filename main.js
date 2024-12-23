@@ -35,7 +35,11 @@ const dark = () => {
   const main = document.getElementById('main');
   const body = document.getElementById('body')
   const darkmode = document.getElementById('DarkMode')
+
   const open_drawer = document.getElementById('open-drawer');
+  const close_drawer = document.getElementById('close-drawer');
+  const drawer = document.getElementById('drawer');
+  const drawer_elements = document.getElementsByClassName('drawer-element')
 
   const bg_spaces = document.getElementsByClassName('bg_spaces');
 
@@ -72,6 +76,13 @@ const dark = () => {
     darkmode.classList.replace('fa-moon','fa-sun')
     article_title.style.color = 'white'
     open_drawer.style.color = "white"
+    close_drawer.style.color = "white"
+    drawer.style.backgroundColor = "#322e2e"
+
+    for(let drawer_element of drawer_elements)
+    {
+      drawer_element.style.color = "white"
+    }
 
     logo_article.style.backgroundColor = 'rgb(32 29 29)'
 
@@ -104,6 +115,12 @@ bg_space.style.backgroundColor = 'rgb(32 29 29)'
       logo.style.color = 'black'
     }
 
+    for(let logo of logos){
+      logo.addEventListener("mouseover",()=>{
+        logo.style.backgroundColor = "white"
+      })
+    }
+
     article_frame.style.backgroundColor = 'rgb(19 18 18)'
     article_paragraph.style.color = 'white'
     ending_title.style.color = 'white'
@@ -131,6 +148,13 @@ bg_space.style.backgroundColor = 'rgb(32 29 29)'
     darkmode.style.color = "#f9af00"
     logo_article.style.backgroundColor = 'transparent'
     open_drawer.style.color = "black"
+    close_drawer.style.color = "black"
+    drawer.style.backgroundColor = "white"
+
+    for(let drawer_element of drawer_elements)
+      {
+        drawer_element.style.color = "black"
+      }
 
     for(let bg_space of bg_spaces )
       {
@@ -159,6 +183,12 @@ bg_space.style.backgroundColor = 'transparent'
       
     for(let logo of logos){
       logo.style.color = 'black'
+    }
+
+    for(let logo of logos){
+      logo.addEventListener("mouseout",()=>{
+        logo.style.backgroundColor = "transparent"
+      })
     }
     article_frame.style.backgroundColor = '#dee3e754'
     article_title.style.color = '#4b4545'
