@@ -1,7 +1,22 @@
 body {
   margin: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  background-color: white;
 }
 
+#DarkMode {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #f9af00;
+  transition: color 0.3s ease;
+}
+
+#DarkMode:hover {
+  color: #000;
+}
 #bg_space {
   height: 55px;
 }
@@ -11,12 +26,12 @@ body {
 }
 
 .extra_space {
-  height: 39px;
+  height: 17px;
 }
 
-.article_space {
+/* .article_space {
   height: 28px;
-}
+} */
 
 #main {
   background-image: url(../../../../assests/body-bg.png);
@@ -39,6 +54,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 37%;
+  position: sticky;
 }
 
 #nav_list {
@@ -65,12 +81,12 @@ body {
   font-size: 26px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transition: 1s;
+  transition-delay: 0.3s;
+  transition: 0.5s ease-in;
 }
 #nav_title:hover {
   color: #00acac;
-  color: #00acac;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 #open-drawer {
@@ -102,18 +118,20 @@ body {
 }
 
 #bg-title-1 {
+  text-shadow: 1px 1px 51px white;
   font-family: system-ui;
   font-size: 55px;
   font-weight: 700;
-  color: rgb(88, 80, 80);
+  color: rgb(19 17 17);
   margin: 0px;
 }
 
 #bg-title-2 {
+  text-shadow: 1px 1px 7px white;
   font-size: 54px;
   font-family: system-ui;
   font-weight: lighter;
-  color: rgb(123, 117, 117);
+  color: rgb(19 17 17);
   margin: 0px 0px 33px;
 }
 
@@ -146,13 +164,19 @@ body {
 .logo_section {
   width: 19%;
 }
-#logo {
+.logo {
   height: 99px;
   border-width: 1px;
   border-style: solid;
   border-color: initial;
   border-image: initial;
   border-radius: 50%;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  background-color: #00ffff;
 }
 
 .ending_space {
@@ -164,6 +188,11 @@ body {
   color: #4f4c4c;
   font-size: 22px;
   font-weight: 600;
+  transition: 1s;
+}
+
+.logo_heading:hover{
+  color: black;
 }
 
 .logo_paragraph {
@@ -171,8 +200,7 @@ body {
   color: gray;
 }
 
-#article_space {
-}
+
 #article_image {
   height: 503px;
   width: 58%;
@@ -183,6 +211,12 @@ body {
   font-size: 28px;
   color: #4b4545;
   margin-top: 64px;
+  transition: 1s;
+  width: fit-content;
+}
+
+#article_title:hover{
+  color: black;
 }
 
 #article_paragraph {
@@ -195,7 +229,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 24px;
   margin-left: 2px;
 }
 
@@ -203,10 +237,11 @@ body {
   background-image: url("../../../../assests/wallpaperflare.com_wallpaper (8).jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 429px;
-  height: 254px;
+  width: 415px;
+  height: 235px;
   display: flex;
   transition: 1s;
+  margin-right: 0px;
 }
 
 #cards_head:hover {
@@ -217,10 +252,11 @@ body {
   background-image: url("../../../../assests/wallpaperflare.com_wallpaper (7).jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 429px;
-  height: 254px;
+  width: 415px;
+  height: 235px;
   display: flex;
   transition: 1s;
+  margin-right: 0px;
 }
 
 #cards_head_1:hover {
@@ -237,6 +273,12 @@ body {
   font-size: 23px;
   font-family: sans-serif;
   color: #4f4c4c;
+  /* margin-top: 21px; */
+  transition: 1s;
+}
+
+.cards_title:hover {
+  color: black;
 }
 
 .cards_paragraph {
@@ -277,7 +319,13 @@ body {
 #ending-title {
   font-family: sans-serif;
   color: #4f4c4c;
+  transition: 1s;
 }
+
+#ending-title:hover {
+  color: black;
+}
+
 
 #ending-paragraph {
   width: 61%;
@@ -312,14 +360,15 @@ body {
 }
 
 #footer {
-  display: flex;
+  display: flex
+;
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(243, 243, 243);
   padding-top: 55px;
   padding-bottom: 49px;
-  padding-left: 5%;
-  gap: 10%;
+  padding-left: 1%;
+  gap: 13%;
 }
 
 #Footer_Links {
@@ -331,7 +380,7 @@ body {
 
 .footer_element {
   font-family: system-ui;
-  padding-right: 37px;
+  /* padding-right: 37px; */
   font-size: 14px;
   font-weight: 400;
   margin: 10px;
@@ -347,11 +396,12 @@ body {
 
 @media screen and (max-width: 745px) and (min-width: 0px) {
   .article_space {
-    height: 3px;
-  }
+    height: 23px;
+}
+
 
   .article_space_1 {
-    height: 10px;
+    height: 29px;
   }
 
   #nav_bar {
@@ -362,7 +412,7 @@ body {
   }
 
   .extra_space {
-    height: 0px;
+    height: 51px;
   }
 
   #nav_list {
@@ -375,8 +425,45 @@ body {
     cursor: pointer;
   }
 
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 8px;
+    background-color: #444;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  }
+
+  .drawer-element {
+    color: black;
+    transition: 0.5s;
+    font-family: system-ui;
+  }
+
+  .drawer-element:hover {
+    color: #00acac;
+    transform: scale(1.1);
+  }
+
   #open-drawer {
     display: block;
+    transition: 0.5s;
   }
 
   #open-drawer {
@@ -395,12 +482,6 @@ body {
     font-size: 13px;
   }
 
-  .nav_element:hover {
-    color: #00acac;
-    color: #00acac;
-    transform: scale(1.1);
-  }
-
   #drawer {
     display: block;
     background-color: white;
@@ -408,8 +489,8 @@ body {
   .drawer {
     position: fixed;
     top: 0;
-    left: -291px;
-    width: 224px;
+    left: -806px;
+    width: 100%;
     height: 100%;
     background-color: #333;
     color: #fff;
@@ -422,7 +503,7 @@ body {
   }
 
   .drawer.open {
-    transform: translateX(250px); /* Show drawer */
+    transform: translateX(740px);
   }
 
   .close-btn {
@@ -441,39 +522,39 @@ body {
   }
 
   .drawer ul li {
-    margin: 10px 0;
+    margin: -2px 0;
     font-family: sans-serif;
-  transition: 1s;
-  font-size: 13px;
+    transition: 1s;
+    font-size: 13px;
   }
 
   .drawer ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
-  }
-
-  .drawer ul li a:hover {
-    text-decoration: underline;
+    width: 35%;
+    background-color: white;
   }
 
   #bg_space {
-    height: 29px;
-  }
+    height: 38px;
+}
 
   #bg-title-1 {
+    text-shadow: 1px 1px 52px white;
     font-family: system-ui;
     font-size: 32px;
     font-weight: 700;
-    color: #585050;
+    color: rgb(19 17 17);
     margin: 0px;
   }
 
   #bg-title-2 {
+    text-shadow: 1px 1px 7px white;
     font-size: 32px;
     font-family: system-ui;
     font-weight: lighter;
-    color: #7b7575;
+    color: rgb(19 17 17);
     margin: 0px;
     margin-bottom: 47px;
   }
@@ -482,18 +563,24 @@ body {
     color: white;
     background-color: #515050;
     border: none;
-    height: 51px;
-    width: 112px;
+    height: 52px;
+    width: 143px;
     border-radius: 5px;
     transition: 1s;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   #bg_image {
     background-image: url(../../../../assests/snow-mountain-nature-landscape-ai-generated-wallpaper-sr05112411.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 647px;
+    height: 50%;
+  }
+
+  #bg_image_data {
+    display: grid;
+    padding-top: 25%;
+    padding-bottom: 25%;
   }
 
   #logo_article {
@@ -512,16 +599,20 @@ body {
   }
 
   #article_image {
-    height: 227px;
-    width: 85%;
+    height: 235px;
+    width: 405px;
   }
 
   #article_title {
     font-family: monospace;
     font-size: 28px;
     color: #4b4545;
+    margin: 0;
     margin-top: 27px;
-  }
+    /* margin: 0; */
+    margin-bottom: 27px;
+    width: fit-content;
+}
 
   #article_paragraph {
     width: 88%;
@@ -532,6 +623,7 @@ body {
 
   .logo_section {
     width: 100%;
+    transition: 1s;
   }
 
   .logo_paragraph {
@@ -547,12 +639,20 @@ body {
     gap: 22px;
     margin-left: 15px;
   }
+
+  .cards_title {
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #4f4c4c;
+    margin-top: 14px;
+  }
+
   #cards_head {
     background-image: url("../../../../assests/wallpaperflare.com_wallpaper (8).jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 399px;
-    height: 232px;
+    width: 405px;
+        height: 228px;
     display: flex;
     transition: 1s;
     margin-right: 17px;
@@ -562,29 +662,30 @@ body {
     background-image: url("../../../../assests/wallpaperflare.com_wallpaper (7).jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 399px;
-    height: 232px;
+    width: 405px;
+        height: 228px;
     display: flex;
     transition: 1s;
     margin-right: 17px;
   }
 
-      #cards_button {
-        background: transparent;
-        border: 2px solid #00acac;
-        height: 41px;
-        border-radius: 5px;
-        color: #00acac;
-        transition: 1s;
-        width: 119px;
-    }
+  #cards_button {
+    background: transparent;
+    border: 2px solid #00acac;
+    height: 41px;
+    border-radius: 5px;
+    color: #00acac;
+    transition: 1s;
+    width: 137px;
+  }
 
   #ending-paragraph {
     width: 89%;
     font-family: system-ui;
     color: gray;
-    margin-left: 3%;
+    margin-left: 6%;
     letter-spacing: 2px;
+    margin-bottom: 10%;
   }
 
   #ending-button {
@@ -600,25 +701,53 @@ body {
   }
 
   .ending_space {
-    height: 16px;
+    height: 51px;
   }
 
   #footer {
-    display: flex;
+    display: flex
+;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
     background-color: #f3f3f3;
-    padding-top: 55px;
-    padding-bottom: 49px;
+    padding-top: 51px;
+    padding-bottom: 61px;
+    margin-left: -6%;
+}
+
+  #Footer_Links {
+    color: aqua;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #footer-space {
+    height: 30px;
+  }
+
+  .footer_title {
+    text-align: center;
+  }
+
+  .footer_element {
+    font-family: system-ui;
+    /* padding-right: 37px; */
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
   }
 
   #footer_table {
     width: 100%;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     color: gray;
+    gap: 3%;
   }
 }
 
